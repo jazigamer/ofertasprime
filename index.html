@@ -86,15 +86,14 @@
 <!-- Modal para produto não encontrado -->
 <div id="notFoundModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); justify-content:center; align-items:center; z-index:1001;">
   <div style="background:#fff; padding:2rem; border-radius:8px; max-width:400px; width:90%; text-align:center;">
-    <h2>😿 Produto não encontrado!</h2>
-    <p>Qual produto você gostaria que estivesse na loja?</p>
+    <h2 style="color: black;">😿 Produto não encontrado!</h2>
+    <p style="color: black;">Qual produto você gostaria que estivesse na loja?</p>
     <form id="notFoundForm" action="https://formsubmit.co/jaazielpereira44@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Produto solicitado não encontrado">
-      <input type="text" name="produto_desejado" id="produtoDesejado" style="width:100%; padding:0.5rem; margin-bottom:1rem;" required>
-      <button type="submit" style="padding:0.7rem 1.5rem; background:#ff9900; color:white; border:none; border-radius:4px; cursor:pointer;">Enviar</button>
-    </form>
-    <button id="closeNotFound" style="margin-top:1rem; background:#ccc; padding:0.5rem 1rem; border:none; border-radius:4px; cursor:pointer;">Cancelar</button>
-  </div>
+  <input type="hidden" name="_subject" value="Produto solicitado não encontrado">
+  <input type="hidden" name="_next" value="https://ofertasprime.netlify.app/"> <!-- volta pra home -->
+  <input type="text" name="produto_desejado" id="produtoDesejado" style="width:100%; padding:0.5rem; margin-bottom:1rem;" required>
+  <button type="submit" style="padding:0.7rem 1.5rem; background:#ff9900; color:white; border:none; border-radius:4px; cursor:pointer;">Enviar</button>
+</form>
 </div>
 
 <!-- Botão extra opcional -->
