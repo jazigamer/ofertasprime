@@ -23,11 +23,11 @@ const products = [
     {id:1,title:"Echo Dot (4ª Geração)",price:379.05,image:"https://m.media-amazon.com/images/I/71Q9d6N7xkL._AC_SL1000_.jpg",rating:5,link:"https://amzn.to/46Mdubb"},
     {id:2,title:"Kit 10 Mini Pincéis De Maquiagem Com Estojo Para Viagem – Cerdas Macias, Travel Size, Necessaire inclusa, Pincéis Para Base, Blush, Pó, Sombras e Corretivo, Portátil e Multifuncional",price:39.09,image:"https://m.media-amazon.com/images/I/61JM98HOnyL._AC_SX679_.jpg",rating:4.2,link:"https://amzn.to/4nfEjur"},
     {id:3,title:"Kit com 07 pincéis para maquiagem - KP1-3E, Macrilan",price:32.95,image:"https://m.media-amazon.com/images/I/91mroqWZypL._AC_SX679_.jpg",rating:4.6,link:"https://amzn.to/46xM3AH"},
-    {id:4,title:"Smartwatch Amarelo",price:199.99,image:"https://m.media-amazon.com/images/I/711kAf716SL._AC_SL1500_.jpg",rating:4.5},
-    {id:5,title:"Fone de Ouvido Bluetooth",price:229.90,image:"https://m.media-amazon.com/images/I/61Fj+MaO72L._AC_SL1500_.jpg",rating:4.4},
-    {id:6,title:"Tablet 10.1 Polegadas",price:899.00,image:"https://m.media-amazon.com/images/I/61g3s+/vWTL._AC_SL1500_.jpg",rating:4.3},
-    {id:7,title:"Caixa de Som Bluetooth",price:299.00,image:"https://m.media-amazon.com/images/I/71W+Ek1CbeL._AC_SL1500_.jpg",rating:4.7},
-    {id:8,title:"Carregador Portátil 10000mAh",price:129.90,image:"https://m.media-amazon.com/images/I/51W7eYjYZTL._AC_SL1500_.jpg",rating:4.6}
+    {id:4,title:"Caixa de Som Bluetooth Super Mini",price:25.50,image:"https://m.media-amazon.com/images/I/51gOtOs6IFL._AC_SX679_.jpg",rating:4.2,link:"https://amzn.to/4nFR7d7"},
+    {id:5,title:"Faqueiro Tramontina Búzios cem Aço Inox com Detalhe 24 Peças",price:81.82,image:"https://m.media-amazon.com/images/I/61x2HGF7CfL._AC_SX569_.jpg",rating:4.7, link:"https://amzn.to/3Kii5cl"},
+    {id:6,title:"Camesa Tapete de Banheiro Super Soft 60x40cm - Cinza,Azul,Piscina e Rosé",price:37.79,image:"https://m.media-amazon.com/images/I/81ntip9bhtL._AC_SX679_.jpg",rating:4.5, link:"https://amzn.to/47ZAqFb"},
+    {id:7,title:"Mesa de Centro Sala Classic Oval com Pés em Madeira Maciça Branco/Amendoa",price:172.90,image:"https://m.media-amazon.com/images/I/71pH4LY2zTL._AC_SX679_.jpg",rating:4.2,link:"https://amzn.to/3IuFaIg"},
+    {id:8,title:"Roteador wireless n 300 mbps, com antenas externa, 4 portas lan 10/100, 1",price:101.00,image:"https://m.media-amazon.com/images/I/61Hyezc7WgL._AC_SY879_.jpg",rating:4.7,link:"https://amzn.to/4mCZci4"}
 ];
 
 // Carrinho
