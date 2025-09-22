@@ -21,8 +21,8 @@ themeToggle.addEventListener('click', () => {
 // Produtos
 const products = [
     {id:1,title:"Echo Dot (4ª Geração)",price:379.05,image:"https://m.media-amazon.com/images/I/71Q9d6N7xkL._AC_SL1000_.jpg",rating:5,link:"https://amzn.to/46Mdubb"},
-    {id:2,title:"Kindle Paperwhite",price:499.00,image:"https://m.media-amazon.com/images/I/61X96aH2OlL._AC_SL1000_.jpg",rating:4.8},
-    {id:3,title:"Fire TV Stick Lite",price:279.00,image:"https://m.media-amazon.com/images/I/51T3hX05+HL._AC_SL1000_.jpg",rating:4.6},
+    {id:2,title:"Kit 10 Mini Pincéis De Maquiagem Com Estojo Para Viagem – Cerdas Macias, Travel Size, Necessaire inclusa, Pincéis Para Base, Blush, Pó, Sombras e Corretivo, Portátil e Multifuncional",price:39.09,image:"https://m.media-amazon.com/images/I/61JM98HOnyL._AC_SX679_.jpg",rating:4.2,link:"https://amzn.to/4nfEjur"},
+    {id:3,title:"Kit com 07 pincéis para maquiagem - KP1-3E, Macrilan",price:32.95,image:"https://m.media-amazon.com/images/I/91mroqWZypL._AC_SX679_.jpg",rating:4.6,link:"https://amzn.to/46xM3AH"},
     {id:4,title:"Smartwatch Amarelo",price:199.99,image:"https://m.media-amazon.com/images/I/711kAf716SL._AC_SL1500_.jpg",rating:4.5},
     {id:5,title:"Fone de Ouvido Bluetooth",price:229.90,image:"https://m.media-amazon.com/images/I/61Fj+MaO72L._AC_SL1500_.jpg",rating:4.4},
     {id:6,title:"Tablet 10.1 Polegadas",price:899.00,image:"https://m.media-amazon.com/images/I/61g3s+/vWTL._AC_SL1500_.jpg",rating:4.3},
