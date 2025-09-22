@@ -1,3 +1,21 @@
+// ======= MODAIS GENÉRICOS =======
+function openModal(id) {
+    const modal = document.getElementById(id);
+    if (modal) modal.style.display = 'flex';
+}
+
+function closeModal(id) {
+    const modal = document.getElementById(id);
+    if (modal) modal.style.display = 'none';
+}
+
+// Fecha o modal se clicar fora do conteúdo
+window.addEventListener('click', (e) => {
+    document.querySelectorAll('.modal').forEach(modal => {
+        if (e.target === modal) modal.style.display = 'none';
+    });
+});
+
 // Tema claro/escuro
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;

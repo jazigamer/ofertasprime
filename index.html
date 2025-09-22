@@ -52,30 +52,80 @@
 </section>
 
 <footer>
-<div class="footer-content">
-<div class="footer-section">
-<h3>Sobre Nós</h3>
-<p>A Ofertas Prime conecta você às melhores ofertas online, com praticidade e confiança.</p>
-</div>
-<div class="footer-section">
-<h3>Links Rápidos</h3>
-<ul>
-<li><a href="#">Política de Privacidade</a></li>
-<li><a href="#">Termos de Uso</a></li>
-<li><a href="#">Perguntas Frequentes</a></li>
-</ul>
-</div>
-<div class="footer-section">
-<h3>Contato</h3>
-<ul>
-<li>Email: contato@amazonrevenda.com</li>
-<li>Telefone: (11) 99999-9999</li>
-</ul>
-</div>
-</div>
-<div class="copyright">
-&copy; 2023 Ofertas Prime - Todos os direitos reservados
-</div>
+  <div class="footer-content">
+    <!-- Sobre Nós -->
+    <div class="footer-section">
+      <h3>Sobre Nós</h3>
+      <p>A Ofertas Prime conecta você às melhores ofertas online, com praticidade e confiança.</p>
+    </div>
+
+    <!-- Links Rápidos -->
+    <div class="footer-section">
+      <h3>Links Rápidos</h3>
+      <ul>
+        <li><a href="#" onclick="openModal('privacyModal')">Política de Privacidade</a></li>
+        <li><a href="#" onclick="openModal('termsModal')">Termos de Uso</a></li>
+        <li><a href="#" onclick="openModal('faqModal')">Perguntas Frequentes</a></li>
+      </ul>
+
+      <!-- ==== Modais ==== -->
+      <div id="privacyModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('privacyModal')">&times;</span>
+          <h2>Política de Privacidade</h2>
+          <p>Valorizamos sua privacidade. Seus dados (como nome e e-mail) são utilizados apenas para contato e não são compartilhados com terceiros.</p>
+        </div>
+      </div>
+
+      <div id="termsModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('termsModal')">&times;</span>
+          <h2>Termos de Uso</h2>
+          <p>Ao acessar o site <strong>Ofertas Prime</strong>, você concorda em seguir as regras aqui descritas. Não realizamos vendas diretas — apenas compartilhamos links de ofertas de parceiros confiáveis.</p>
+        </div>
+      </div>
+
+      <div id="faqModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('faqModal')">&times;</span>
+          <h2>Perguntas Frequentes</h2>
+          <p>
+            <strong>Como funciona?</strong> Compartilhamos links de ofertas de parceiros confiáveis.<br><br>
+            <strong>Vocês entregam os produtos?</strong> Não, apenas direcionamos para os sites oficiais.<br><br>
+            <strong>É seguro comprar?</strong> Sim, pois os pagamentos são feitos diretamente nas lojas oficiais.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contato -->
+    <div class="footer-section">
+      <h3>Contato</h3>
+      <p>
+        <a href="https://wa.me/5585982327403" target="_blank" style="text-decoration:none; color:#25D366; font-weight:500;">
+          📱 WhatsApp: Clique aqui para falar comigo
+        </a>
+      </p>
+      <p>
+        <a href="mailto:ofertasprime691@gmail.com" style="text-decoration:none; color:#ff9900; font-weight:500;">
+          ✉️ E-mail: ofertasprime691@gmail.com
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="copyright">
+    &copy; <span id="year"></span> 
+    <a href="https://wa.me/5585982327403" style="color:#212529; text-decoration:none; font-weight:600;">
+      Ofertas Prime
+    </a> - Todos os direitos reservados
+  </div>
+
+  <script>
+    // Atualiza o ano automaticamente
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </footer>
 
 <div class="modal" id="cartModal">
