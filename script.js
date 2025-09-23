@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
       {id:3,title:"Carregador Portátil Power Bank 20000mAh",price:78.99,image:"https://m.media-amazon.com/images/I/61Sj7eUvPGL._AC_SX679_.jpg",rating:5, link: "https://amzn.to/46xhV8F"},
       {id:4,title:"Escova de Limpeza Facial 2 em 1",price:26.90,image:"https://m.media-amazon.com/images/I/41m44GbZKJL._AC_SY450_.jpg",rating:4, link: "https://amzn.to/4n9MQii"},
       {id:5,title:"Kit Manicure 7 Peças em Aço Inoxidável",price:35.96,image:"https://m.media-amazon.com/images/I/61K2g9mjnaL._AC_SY450_.jpg",rating:4, link: "https://amzn.to/4nNhuOp"},
-      {id:6,title:"Tablet 10.1 Polegadas",price:899.00,image:"https://m.media-amazon.com/images/I/61g3s+/vWTL._AC_SL1500_.jpg",rating:4.3, link: "https://amzn.to/3W7j7f2"},
-      {id:7,title:"Caixa de Som Bluetooth",price:299.00,image:"https://m.media-amazon.com/images/I/71W+Ek1CbeL._AC_SL1500_.jpg",rating:4.7, link: "https://amzn.to/3W7j7f2"},
-      {id:8,title:"Carregador Portátil 10000mAh",price:129.90,image:"https://m.media-amazon.com/images/I/51W7eYjYZTL._AC_SL1500_.jpg",rating:4.6, link: "https://amzn.to/3W7j7f2"}
+      {id:6,title:"Câmera Lâmpada de Segurança Full Hd",price:78.90,image:"https://m.media-amazon.com/images/I/51zEk+GOQsL._AC_SX679_.jpg",rating:4.1, link: "https://amzn.to/4nOXdYV"},
+      {id:7,title:"Organizador De Maquiagem, Organizador de Pincéis Giratório",price:46.05,image:"https://m.media-amazon.com/images/I/61x+cTuRthL._AC_SY879_.jpg",rating:3.7, link: "https://amzn.to/4pBXqjG"},
+      {id:8,title:"Processador de Alimentos Manual",price:39.90,image:"https://m.media-amazon.com/images/I/611sVKww5EL._AC_SX679_.jpg",rating:4, link: "https://amzn.to/4gBONlh"}
   ];
   // ======= FUNÇÃO DE DESCRIÇÕES =======
   function getProductDescription(productId) {
@@ -59,9 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
           3: "Carregador Portátil Power Bank 20000mAh, Bateria Portatil com Carregamento Rápido, Led Indicador de Bateria, USB-A (até 15W) + USB-C (até 20W) para Dispositivos iOS e Android/USB/Type-C (Branco)",
           4: "Escova de Limpeza Facial 2 em 1 com Massageador de Silicone – Skincare Diário com Limpeza Suave e Profunda",
           5: "Kit Manicure 7 Peças em Aço Inoxidável, Estojo Portátil com Cortador de Unhas, Alicate e Tesoura, Preto e Vermelho Estojo Compacto para Viagens e Uso Pessoal e Profissional",
-          6: "Tablet Android 11 com 64GB, câmera dupla e tela Full HD de 10.1 polegadas",
-          7: "Caixa de som à prova d'água com 20W de potência, LED colorido e 12h de bateria",
-          8: "Power bank 10000mAh com carregamento rápido, 2 portas USB e design compacto"
+          6: "Câmera Lâmpada de Segurança Full Hd Ip Wifi Giratória 360 Visão Noturna Com Sensor de Movimento E Infravermelho",
+          7: "Organizador De Maquiagem, Organizador de Pincéis Giratório TRC0468-12,5 x 23 cm",
+          8: "Processador de Alimentos Manual Cortador Portátil de Legumes e Frutas Triturador de Alho e Cebola para Cozinha e Camping (Preto)"
       };
       return descriptions[productId] || "Produto de alta qualidade com ótimo custo-benefício";
   }
