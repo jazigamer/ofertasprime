@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const descriptions = {
           1: "Mini Projetor Portátil 5G Wi-Fi 6 Bluetooth 5.0 Android 11 4K 1080P Full HD 8000 Lumens LED Auto Correção Trapezoidal Horizontal Rotação 180° Ideal para Projeções Cinemáticas",
           2: "Fita LED RGB 5 Metros 300 LEDs com Controle Remoto – Iluminação Personalizável para Ambientes",
-          3: "Streaming em Full HD com Alexa, controle por voz e milhares de aplicativos",
-          4: "Smartwatch com monitor cardíaco, notificações e 20 dias de bateria. Resistente à água",
-          5: "Fone Bluetooth com 30h de bateria, cancelamento de ruído e som surround",
+          3: "Carregador Portátil Power Bank 20000mAh, Bateria Portatil com Carregamento Rápido, Led Indicador de Bateria, USB-A (até 15W) + USB-C (até 20W) para Dispositivos iOS e Android/USB/Type-C (Branco)",
+          4: "Escova de Limpeza Facial 2 em 1 com Massageador de Silicone – Skincare Diário com Limpeza Suave e Profunda",
+          5: "Kit Manicure 7 Peças em Aço Inoxidável, Estojo Portátil com Cortador de Unhas, Alicate e Tesoura, Preto e Vermelho Estojo Compacto para Viagens e Uso Pessoal e Profissional",
           6: "Tablet Android 11 com 64GB, câmera dupla e tela Full HD de 10.1 polegadas",
           7: "Caixa de som à prova d'água com 20W de potência, LED colorido e 12h de bateria",
           8: "Power bank 10000mAh com carregamento rápido, 2 portas USB e design compacto"
