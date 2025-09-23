@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Produtos ORIGINAIS do seu site (COM IMAGEM CORRIGIDA DO ECHO DOT)
   const products = [
-      {id:1,title:"Mini Projetor Portátil 5G Wi-Fi 6 Bluetooth 5.0 Android 11 4K",price:219.90,image:"https://m.media-amazon.com/images/I/519TeoR49WL._AC_SX679_.jpg",rating:5,link:"https://amzn.to/4mwqvdJ"},
-      {id:2,title:"Kindle Paperwhite",price:499.00,image:"https://m.media-amazon.com/images/I/61X96aH2OlL._AC_SL1000_.jpg",rating:4.8, link: "https://amzn.to/3W7j7f2"},
-      {id:3,title:"Fire TV Stick Lite",price:279.00,image:"https://m.media-amazon.com/images/I/51T3hX05+HL._AC_SL1000_.jpg",rating:4.6, link: "https://amzn.to/3W7j7f2"},
-      {id:4,title:"Smartwatch Amarelo",price:199.99,image:"https://m.media-amazon.com/images/I/711kAf716SL._AC_SL1500_.jpg",rating:4.5, link: "https://amzn.to/3W7j7f2"},
-      {id:5,title:"Fone de Ouvido Bluetooth",price:229.90,image:"https://m.media-amazon.com/images/I/61Fj+MaO72L._AC_SL1500_.jpg",rating:4.4, link: "https://amzn.to/3W7j7f2"},
+      {id:1,title:"Mini Projetor Portátil 5G Wi-Fi 6 Bluetooth 5.0 Android 11 4K",price:219.90,image:"https://m.media-amazon.com/images/I/519TeoR49WL._AC_SX679_.jpg",rating:4,link:"https://amzn.to/4mwqvdJ"},
+      {id:2,title:"Fita LED RGB 5 metros",price:38.90,image:"https://m.media-amazon.com/images/I/61Gu8awQjQS._AC_SX679_.jpg",rating:3.9, link: "https://amzn.to/4mAaAv1"},
+      {id:3,title:"Carregador Portátil Power Bank 20000mAh",price:78.99,image:"https://m.media-amazon.com/images/I/61Sj7eUvPGL._AC_SX679_.jpg",rating:5, link: "https://amzn.to/46xhV8F"},
+      {id:4,title:"Escova de Limpeza Facial 2 em 1",price:26.90,image:"https://m.media-amazon.com/images/I/41m44GbZKJL._AC_SY450_.jpg",rating:4, link: "https://amzn.to/4n9MQii"},
+      {id:5,title:"Kit Manicure 7 Peças em Aço Inoxidável",price:35.96,image:"https://m.media-amazon.com/images/I/61K2g9mjnaL._AC_SY450_.jpg",rating:4, link: "https://amzn.to/4nNhuOp"},
       {id:6,title:"Tablet 10.1 Polegadas",price:899.00,image:"https://m.media-amazon.com/images/I/61g3s+/vWTL._AC_SL1500_.jpg",rating:4.3, link: "https://amzn.to/3W7j7f2"},
       {id:7,title:"Caixa de Som Bluetooth",price:299.00,image:"https://m.media-amazon.com/images/I/71W+Ek1CbeL._AC_SL1500_.jpg",rating:4.7, link: "https://amzn.to/3W7j7f2"},
       {id:8,title:"Carregador Portátil 10000mAh",price:129.90,image:"https://m.media-amazon.com/images/I/51W7eYjYZTL._AC_SL1500_.jpg",rating:4.6, link: "https://amzn.to/3W7j7f2"}
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function getProductDescription(productId) {
       const descriptions = {
           1: "Mini Projetor Portátil 5G Wi-Fi 6 Bluetooth 5.0 Android 11 4K 1080P Full HD 8000 Lumens LED Auto Correção Trapezoidal Horizontal Rotação 180° Ideal para Projeções Cinemáticas",
-          2: "Leitor eBooks 6.8″ à prova d'água, luz quente ajustável e bateria de semanas",
+          2: "Fita LED RGB 5 Metros 300 LEDs com Controle Remoto – Iluminação Personalizável para Ambientes",
           3: "Streaming em Full HD com Alexa, controle por voz e milhares de aplicativos",
           4: "Smartwatch com monitor cardíaco, notificações e 20 dias de bateria. Resistente à água",
           5: "Fone Bluetooth com 30h de bateria, cancelamento de ruído e som surround",
