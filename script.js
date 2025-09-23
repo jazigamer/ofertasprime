@@ -18,20 +18,7 @@ window.addEventListener('click', (e) => {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ======= FUNÇÃO DE DESCRIÇÕES =======
-  function getProductDescription(productId) {
-      const descriptions = {
-          1: "Echo Dot 4ª geração com Alexa, controle por voz e som premium. Cor: Azul",
-          2: "Leitor eBooks 6.8″ à prova d'água, luz quente ajustável e bateria de semanas",
-          3: "Streaming em Full HD com Alexa, controle por voz e milhares de aplicativos",
-          4: "Smartwatch com monitor cardíaco, notificações e 20 dias de bateria. Resistente à água",
-          5: "Fone Bluetooth com 30h de bateria, cancelamento de ruído e som surround",
-          6: "Tablet Android 11 com 64GB, câmera dupla e tela Full HD de 10.1 polegadas",
-          7: "Caixa de som à prova d'água com 20W de potência, LED colorido e 12h de bateria",
-          8: "Power bank 10000mAh com carregamento rápido, 2 portas USB e design compacto"
-      };
-      return descriptions[productId] || "Produto de alta qualidade com ótimo custo-benefício";
-  }
+
 
   // Tema claro/escuro
   const themeToggle = document.getElementById('themeToggle');
@@ -55,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Produtos ORIGINAIS do seu site (COM IMAGEM CORRIGIDA DO ECHO DOT)
   const products = [
-      {id:1,title:"Echo Dot (4ª Geração)",price:379.05,image:"https://m.media-amazon.com/images/I/71Mb4ZDC68L._AC_SL1000_.jpg",rating:5,link:"https://amzn.to/46Mdubb"},
+      {id:1,title:"Mini Projetor Portátil 5G Wi-Fi 6 Bluetooth 5.0 Android 11 4K",price:219.90,image:"https://m.media-amazon.com/images/I/519TeoR49WL._AC_SX679_.jpg",rating:5,link:"https://amzn.to/4mwqvdJ"},
       {id:2,title:"Kindle Paperwhite",price:499.00,image:"https://m.media-amazon.com/images/I/61X96aH2OlL._AC_SL1000_.jpg",rating:4.8, link: "https://amzn.to/3W7j7f2"},
       {id:3,title:"Fire TV Stick Lite",price:279.00,image:"https://m.media-amazon.com/images/I/51T3hX05+HL._AC_SL1000_.jpg",rating:4.6, link: "https://amzn.to/3W7j7f2"},
       {id:4,title:"Smartwatch Amarelo",price:199.99,image:"https://m.media-amazon.com/images/I/711kAf716SL._AC_SL1500_.jpg",rating:4.5, link: "https://amzn.to/3W7j7f2"},
@@ -64,7 +51,20 @@ document.addEventListener('DOMContentLoaded', () => {
       {id:7,title:"Caixa de Som Bluetooth",price:299.00,image:"https://m.media-amazon.com/images/I/71W+Ek1CbeL._AC_SL1500_.jpg",rating:4.7, link: "https://amzn.to/3W7j7f2"},
       {id:8,title:"Carregador Portátil 10000mAh",price:129.90,image:"https://m.media-amazon.com/images/I/51W7eYjYZTL._AC_SL1500_.jpg",rating:4.6, link: "https://amzn.to/3W7j7f2"}
   ];
-
+  // ======= FUNÇÃO DE DESCRIÇÕES =======
+  function getProductDescription(productId) {
+      const descriptions = {
+          1: "Mini Projetor Portátil 5G Wi-Fi 6 Bluetooth 5.0 Android 11 4K 1080P Full HD 8000 Lumens LED Auto Correção Trapezoidal Horizontal Rotação 180° Ideal para Projeções Cinemáticas",
+          2: "Leitor eBooks 6.8″ à prova d'água, luz quente ajustável e bateria de semanas",
+          3: "Streaming em Full HD com Alexa, controle por voz e milhares de aplicativos",
+          4: "Smartwatch com monitor cardíaco, notificações e 20 dias de bateria. Resistente à água",
+          5: "Fone Bluetooth com 30h de bateria, cancelamento de ruído e som surround",
+          6: "Tablet Android 11 com 64GB, câmera dupla e tela Full HD de 10.1 polegadas",
+          7: "Caixa de som à prova d'água com 20W de potência, LED colorido e 12h de bateria",
+          8: "Power bank 10000mAh com carregamento rápido, 2 portas USB e design compacto"
+      };
+      return descriptions[productId] || "Produto de alta qualidade com ótimo custo-benefício";
+  }
   // Carrinho
   let cart = [];
   const cartCount = document.querySelector('.cart-count');
