@@ -227,3 +227,54 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCart();
 
 });
+// ======= BOTÃO VOLTAR AO TOPO =======
+const backToTopBtn = document.getElementById('backToTop');
+
+// Mostrar/ocultar botão quando rolar a página
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('show');
+    } else {
+        backToTopBtn.classList.remove('show');
+    }
+});
+
+// Voltar ao topo quando clicar no botão
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// ======= NAVEGAÇÃO SUAVE PARA LINKS INTERNOS =======
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// ======= ATIVAR SEÇÃO DE OFERTAS NO FUTURO =======
+// Quando quiser ativar a seção de ofertas, remova o style="display: none;" do HTML
+// e use este código:
+/*
+function ativarOfertas() {
+    const ofertasSection = document.getElementById('ofertas');
+    ofertasSection.style.display = 'block';
+    
+    // Aqui você pode adicionar produtos em oferta
+    const produtosOferta = products.filter(product => product.desconto > 20); // Exemplo
+    // ... código para exibir produtos em oferta
+}
+*/

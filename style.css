@@ -208,3 +208,56 @@ footer { background-color: var(--bg-secondary); padding: 2rem 1rem; margin-top: 
     .hero h1 { font-size: 2rem; }
     .products-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
 }
+/* ======= BOTÃO VOLTAR AO TOPO ======= */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #e58a00;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ======= SCROLL SUAVE ======= */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ======= ESTILO PARA LINKS DE NAVEGAÇÃO ATIVOS ======= */
+nav a[href="#contato"]:hover,
+nav a[href="#products"]:hover,
+nav a[href="#ofertas"]:hover {
+    color: var(--accent);
+}
+
+/* ======= RESPONSIVIDADE DO BOTÃO ======= */
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}
