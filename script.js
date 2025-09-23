@@ -18,6 +18,21 @@ window.addEventListener('click', (e) => {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ======= FUNÇÃO DE DESCRIÇÕES =======
+  function getProductDescription(productId) {
+      const descriptions = {
+          1: "Echo Dot 4ª geração com Alexa, controle por voz e som premium. Cor: Azul",
+          2: "Leitor eBooks 6.8″ à prova d'água, luz quente ajustável e bateria de semanas",
+          3: "Streaming em Full HD com Alexa, controle por voz e milhares de aplicativos",
+          4: "Smartwatch com monitor cardíaco, notificações e 20 dias de bateria. Resistente à água",
+          5: "Fone Bluetooth com 30h de bateria, cancelamento de ruído e som surround",
+          6: "Tablet Android 11 com 64GB, câmera dupla e tela Full HD de 10.1 polegadas",
+          7: "Caixa de som à prova d'água com 20W de potência, LED colorido e 12h de bateria",
+          8: "Power bank 10000mAh com carregamento rápido, 2 portas USB e design compacto"
+      };
+      return descriptions[productId] || "Produto de alta qualidade com ótimo custo-benefício";
+  }
+
   // Tema claro/escuro
   const themeToggle = document.getElementById('themeToggle');
   const body = document.body;
@@ -37,21 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
           themeToggle.textContent = '☀️';
       }
   });
-
-  // ======= FUNÇÃO DE DESCRIÇÕES =======
-  function getProductDescription(productId) {
-      const descriptions = {
-          1: "Echo Dot 4ª geração com Alexa, controle por voz e som premium. Cor: Azul",
-          2: "Leitor eBooks 6.8″ à prova d'água, luz quente ajustável e bateria de semanas",
-          3: "Streaming em Full HD com Alexa, controle por voz e milhares de aplicativos",
-          4: "Smartwatch com monitor cardíaco, notificações e 20 dias de bateria. Resistente à água",
-          5: "Fone Bluetooth com 30h de bateria, cancelamento de ruído e som surround",
-          6: "Tablet Android 11 com 64GB, câmera dupla e tela Full HD de 10.1 polegadas",
-          7: "Caixa de som à prova d'água com 20W de potência, LED colorido e 12h de bateria",
-          8: "Power bank 10000mAh com carregamento rápido, 2 portas USB e design compacto"
-      };
-      return descriptions[productId] || "Produto de alta qualidade com ótimo custo-benefício";
-  }
 
   // Produtos ORIGINAIS do seu site (COM IMAGEM CORRIGIDA DO ECHO DOT)
   const products = [
@@ -165,6 +165,44 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 
+  // ======= BOTÃO VOLTAR AO TOPO =======
+  const backToTopBtn = document.getElementById('backToTop');
+
+  // Mostrar/ocultar botão quando rolar a página
+  window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+          backToTopBtn.classList.add('show');
+      } else {
+          backToTopBtn.classList.remove('show');
+      }
+  });
+
+  // Voltar ao topo quando clicar no botão
+  backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  });
+
+  // ======= NAVEGAÇÃO SUAVE PARA LINKS INTERNOS =======
+  document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+              targetElement.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start'
+              });
+          }
+      });
+  });
+
   // Eventos
   cartIcon.addEventListener('click', () => {
       showCart();
@@ -227,54 +265,3 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCart();
 
 });
-// ======= BOTÃO VOLTAR AO TOPO =======
-const backToTopBtn = document.getElementById('backToTop');
-
-// Mostrar/ocultar botão quando rolar a página
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 300) {
-        backToTopBtn.classList.add('show');
-    } else {
-        backToTopBtn.classList.remove('show');
-    }
-});
-
-// Voltar ao topo quando clicar no botão
-backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
-// ======= NAVEGAÇÃO SUAVE PARA LINKS INTERNOS =======
-document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        
-        if (targetId === '#') return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
-// ======= ATIVAR SEÇÃO DE OFERTAS NO FUTURO =======
-// Quando quiser ativar a seção de ofertas, remova o style="display: none;" do HTML
-// e use este código:
-/*
-function ativarOfertas() {
-    const ofertasSection = document.getElementById('ofertas');
-    ofertasSection.style.display = 'block';
-    
-    // Aqui você pode adicionar produtos em oferta
-    const produtosOferta = products.filter(product => product.desconto > 20); // Exemplo
-    // ... código para exibir produtos em oferta
-}
-*/
