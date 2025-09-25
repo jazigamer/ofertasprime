@@ -252,3 +252,103 @@ nav a[href="#ofertas"]:hover {
         line-height: 1.2;
     }
 }
+/* NOVAS REGRAS PARA AS DUAS ÁREAS */
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.catalog-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.category-filters {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text-primary);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+/* Destaque para ofertas urgentes */
+.product-card.urgente {
+    border: 2px solid #ff4444;
+    position: relative;
+}
+
+.product-card.urgente::before {
+    content: "⚠️ URGENTE";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4444;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Melhorias nos cards */
+.product-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--accent);
+    margin: 0.5rem 0;
+}
+
+.product-old-price {
+    text-decoration: line-through;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.product-discount {
+    background: #ff4444;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .catalog-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-filters {
+        justify-content: center;
+    }
+    
+    .category-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
