@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./3.png" type="image/x-icon">
-    <title>Ofertas Prime - As Melhores Promoções da Amazon</title>
+    <title>Ofertas Prime</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- BOTÃO VOLTAR AO TOPO -->
+<button id="backToTop" class="back-to-top" title="Voltar ao topo">↑</button>
+
 <header>
   <div class="header-container">
     <div class="brand">
-      <img src="./4.png" alt="Logo" class="logo-img">
+      <!-- Logo para tema claro -->
+      <img src="./logo1.png" alt="Logo Ofertas Prime" class="logo-img light-logo">
+      <!-- Logo para tema escuro -->
+      <img src="./logo2.png" alt="Logo Ofertas Prime" class="logo-img dark-logo">
       <div class="logo">Ofertas<span>Prime</span></div>
     </div>
 
     <nav>
       <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#catalogo-completo">Catálogo</a></li>
-        <li><a href="#ofertas-urgentes">Ofertas</a></li>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#products">Produtos</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
         <li><a href="#contato">Contato</a></li>
         <li class="cart-icon" id="cartIcon">🛒 <span class="cart-count">0</span></li>
         <li><button class="theme-toggle" id="themeToggle">🌙</button></li>
@@ -31,47 +37,31 @@
 
 <section class="hero">
 <div class="hero-content">
-    <h1>🔥 OFERTAS IMPERDÍVEIS DA AMAZON</h1>
-    <p>Encontre as melhores promoções com descontos de até 60%! Frete grátis e entrega rápida.</p>
-    <a href="#ofertas-urgentes" class="btn">Ver Ofertas do Dia</a>
+    <h1 id="inicio">Os melhores produtos da Amazon com entrega rápida</h1>
+    <p>Encontre tudo o que precisa com os preços competitivos e qualidade garantida Amazon.</p>
+    <a href="#products" class="btn">Ver Produtos</a>
 </div>
 </section>
 
-<!-- ÁREA 1: OFERTAS URGENTES -->
-<section class="container" id="ofertas-urgentes">
-<h2 class="section-title">⚠️ OFERTAS RELÂMPAGO</h2>
-<p class="section-subtitle">Promoções por tempo limitado - Corra antes que acabem!</p>
-
+<!-- SEÇÃO DE OFERTAS (PARA O FUTURO) -->
+<section class="container" id="ofertas" style="display: none;">
+<h2 class="section-title">Ofertas Especiais</h2>
 <div class="products-grid" id="ofertasGrid">
-    <!-- Ofertas urgentes serão carregadas aqui -->
+    <!-- As ofertas serão adicionadas aqui depois -->
 </div>
 </section>
 
-<!-- ÁREA 2: CATÁLOGO COMPLETO -->
-<section class="container" id="catalogo-completo">
-<h2 class="section-title">📦 CATÁLOGO COMPLETO</h2>
-
-<div class="catalog-controls">
-    <input type="text" id="searchBox" placeholder="🔍 Pesquisar produtos..." class="search-box">
-    <div class="category-filters">
-        <button class="category-btn active" data-category="todos">Todos</button>
-        <button class="category-btn" data-category="eletronicos">Eletrônicos</button>
-        <button class="category-btn" data-category="casa">Casa & Cozinha</button>
-        <button class="category-btn" data-category="livros">Livros</button>
-        <button class="category-btn" data-category="beleza">Beleza</button>
-    </div>
-</div>
-
-<div class="products-grid" id="catalogoGrid">
-    <!-- Catálogo completo será carregado aqui -->
-</div>
+<section class="container" id="products">
+<h2 class="section-title">Produtos em Destaque</h2>
+<input type="text" id="searchBox" placeholder="Pesquisar produtos..." class="search-box">
+<div class="products-grid" id="productsGrid"></div>
 </section>
 
-<footer id="contato">
+<footer>
 <div class="footer-content">
 <div class="footer-section">
 <h3>Sobre Nós</h3>
-<p>A Ofertas Prime conecta você às melhores ofertas da Amazon, com praticidade e confiança.</p>
+<p>A Ofertas Prime conecta você às melhores ofertas online, com praticidade e confiança.</p>
 </div>
 <div class="footer-section">
 <h3>Links Rápidos</h3>
@@ -85,7 +75,7 @@
   <div class="modal-content">
     <span class="close" onclick="closeModal('privacyModal')">&times;</span>
     <h2>Política de Privacidade</h2>
-    <p>Respeitamos sua privacidade. Os dados coletados são utilizados apenas para comunicação e não são compartilhados com terceiros.</p>
+    <p>Respeitamos sua privacidade. Os dados coletados (como nome e e-mail) são utilizados apenas para comunicação e não são compartilhados com terceiros.</p>
   </div>
 </div>
 
@@ -101,14 +91,14 @@
   <div class="modal-content">
     <span class="close" onclick="closeModal('faqModal')">&times;</span>
     <h2>Perguntas Frequentes</h2>
-    <p><strong>Como funciona?</strong> Compartilhamos links de ofertas da Amazon.<br><br>
-       <strong>Vocês entregam os produtos?</strong> Não, as compras são feitas diretamente na Amazon.<br><br>
-       <strong>É seguro comprar?</strong> Sim, pois os pagamentos são feitos diretamente na Amazon.</p>
+    <p><strong>Como funciona?</strong> Compartilhamos links de ofertas de parceiros confiáveis.<br><br>
+       <strong>Vocês entregam os produtos?</strong> Não, apenas direcionamos para os sites oficiais.<br><br>
+       <strong>É seguro comprar?</strong> Sim, pois os pagamentos são feitos diretamente nas lojas oficiais.</p>
   </div>
 </div>
 </div>
 <div class="footer-section">
-<h3>Contato</h3>
+<h3 id="contato">Contato</h3>
   <p>
     <a href="https://wa.me/5585982327403" target="_blank" style="text-decoration:none; color:#25D366;">
       📱 Fale comigo no WhatsApp
@@ -122,20 +112,20 @@
 </div>
 </div>
 <div class="copyright">
-&copy; 2024 Ofertas Prime - Todos os direitos reservados
+&copy; 2023 Ofertas Prime - Todos os direitos reservados
 </div>
 </footer>
 
 <div class="modal" id="cartModal">
 <div class="modal-content">
 <span class="close-modal" id="closeModal">&times;</span>
-<h2>Seu Carrinho de Compras</h2>
+<h2>Seu Carrinho</h2>
 <div class="cart-items" id="cartItems"></div>
 <div class="cart-total">
     <span>Total:</span>
     <span id="cartTotal">R$ 0,00</span>
 </div>
-<button class="checkout-btn" id="checkoutBtn">🛒 Finalizar Compra na Amazon</button>
+<button class="checkout-btn" id="checkoutBtn">Finalizar Compra</button>
 </div>
 </div>
 
@@ -148,11 +138,10 @@
       <input type="hidden" name="_subject" value="Produto solicitado - OfertasPrime">
       <input type="hidden" name="_next" value="https://ofertasprime.netlify.app/">
       <input type="text" name="produto_desejado" id="produtoDesejado" style="width:100%; padding:0.5rem; margin-bottom:1rem;" required>
-      <button type="submit" style="padding:0.7rem 1.5rem; background:#ff9900; color:white; border:none; border-radius:4px; cursor:pointer;">Enviar Solicitação</button>
+      <button type="submit" style="padding:0.7rem 1.5rem; background:#ff9900; color:white; border:none; border-radius:4px; cursor:pointer;">Pedir Produto</button>
     </form>
   </div>
 </div>
-
 <script src="./script.js"></script>
 </body>
 </html>
