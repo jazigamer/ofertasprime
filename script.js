@@ -49,7 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
       {id:5,title:"Kit Manicure 7 Peças em Aço Inoxidável",price:35.96,image:"https://m.media-amazon.com/images/I/61K2g9mjnaL._AC_SY450_.jpg",rating:4, link: "https://amzn.to/4nNhuOp"},
       {id:6,title:"Câmera Lâmpada de Segurança Full Hd",price:78.90,image:"https://m.media-amazon.com/images/I/51zEk+GOQsL._AC_SX679_.jpg",rating:4.1, link: "https://amzn.to/4nOXdYV"},
       {id:7,title:"Organizador De Maquiagem, Organizador de Pincéis Giratório",price:46.05,image:"https://m.media-amazon.com/images/I/61x+cTuRthL._AC_SY879_.jpg",rating:3.7, link: "https://amzn.to/4pBXqjG"},
-      {id:8,title:"Processador de Alimentos Manual",price:39.90,image:"https://m.media-amazon.com/images/I/611sVKww5EL._AC_SX679_.jpg",rating:4, link: "https://amzn.to/4gBONlh"}
+      {id:8,title:"Processador de Alimentos Manual",price:39.90,image:"https://m.media-amazon.com/images/I/611sVKww5EL._AC_SX679_.jpg",rating:4, link: "https://amzn.to/4gBONlh"},      
+      {id:9,title:"2 peças Microfone de lapela sem fio para telefone (Type C)",price:28.47,image:"https://m.media-amazon.com/images/I/61bHdnQ952L._AC_SX679_.jpg",rating:3, link: "https://amzn.to/46DLWoE"}
   ];
   // ======= FUNÇÃO DE DESCRIÇÕES =======
   function getProductDescription(productId) {
@@ -61,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
           5: "Kit Manicure 7 Peças em Aço Inoxidável, Estojo Portátil com Cortador de Unhas, Alicate e Tesoura, Preto e Vermelho Estojo Compacto para Viagens e Uso Pessoal e Profissional",
           6: "Câmera Lâmpada de Segurança Full Hd Ip Wifi Giratória 360 Visão Noturna Com Sensor de Movimento E Infravermelho",
           7: "Organizador De Maquiagem, Organizador de Pincéis Giratório TRC0468-12,5 x 23 cm",
-          8: "Processador de Alimentos Manual Cortador Portátil de Legumes e Frutas Triturador de Alho e Cebola para Cozinha e Camping (Preto)"
+          8: "Processador de Alimentos Manual Cortador Portátil de Legumes e Frutas Triturador de Alho e Cebola para Cozinha e Camping (Preto)",
+          9:"Kit Microfone Lapela Sem Fio Duplo USB-C – Redução de Ruído, Bateria 5h, Alcance 20m – Compatível com iPhone 15/16 e Android – Ideal para Vídeo, Entrevista, Vlog"
       };
       return descriptions[productId] || "Produto de alta qualidade com ótimo custo-benefício";
   }
